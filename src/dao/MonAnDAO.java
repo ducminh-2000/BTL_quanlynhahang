@@ -17,8 +17,6 @@ public class MonAnDAO extends DAO{
     }
     public boolean luuMonAn(MonAn ma){
         boolean result = false;
-        
-        
         return result;
     }
     public boolean luuNguyenLieuMonAn(MonAn ma){
@@ -29,7 +27,16 @@ public class MonAnDAO extends DAO{
     }
     public ArrayList<MonAn> layDSMonAn(){
         ArrayList<MonAn> list = new ArrayList<>();
-        
         return list;
+    }
+    public ArrayList<MonAn> timkiemMonAn(String key){
+        ArrayList<MonAn> result = new ArrayList<MonAn>();
+        return result;
+    }
+    public boolean capnhatmonan(MonAn ma){
+        return true;
+    }
+    public ArrayList<MonAn> getAll(){
+        return new ArrayList<MonAn>();
     }
 }
