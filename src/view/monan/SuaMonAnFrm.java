@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 package view.monan;
+import model.NguoiDung;
 
 /**
  *
@@ -14,7 +15,9 @@ public class SuaMonAnFrm extends javax.swing.JFrame {
     /**
      * Creates new form GDSuaMonAn
      */
+    private NguoiDung nd;
     public SuaMonAnFrm() {
+        this.nd = nd;
         initComponents();
     }
 

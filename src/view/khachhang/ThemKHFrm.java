@@ -4,17 +4,20 @@
  * and open the template in the editor.
  */
 package view.khachhang;
+import model.HangDat;
 
 /**
  *
  * @author Theu
  */
 public class ThemKHFrm extends javax.swing.JFrame {
+    private HangDat hd;
 
     /**
      * Creates new form GDThemKH
      */
-    public ThemKHFrm() {
+    public ThemKHFrm(HangDat hd) {
+        this.hd=hd;
         initComponents();
     }
 
