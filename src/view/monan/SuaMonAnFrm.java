@@ -5,7 +5,7 @@
  */
 package view.monan;
 import model.NguoiDung;
-
+import model.MonAn;
 /**
  *
  * @author Theu
@@ -16,8 +16,10 @@ public class SuaMonAnFrm extends javax.swing.JFrame {
      * Creates new form GDSuaMonAn
      */
     private NguoiDung nd;
-    public SuaMonAnFrm() {
+    private MonAn ma;
+    public SuaMonAnFrm(NguoiDung nd, MonAn ma) {
         this.nd = nd;
+        this.ma = ma;
         initComponents();
     }
 
