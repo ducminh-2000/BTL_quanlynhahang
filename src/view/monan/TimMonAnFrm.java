@@ -16,7 +16,7 @@ public class TimMonAnFrm extends javax.swing.JFrame {
      * Creates new form GDTimMonAn
      */
     private NguoiDung nd;
-    public TimMonAnFrm(guoiDung nd) {
+    public TimMonAnFrm(NguoiDung nd) {
          this.nd = nd;
         initComponents();
     }
