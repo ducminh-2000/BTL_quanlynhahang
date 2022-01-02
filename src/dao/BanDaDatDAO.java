@@ -4,7 +4,10 @@
  * and open the template in the editor.
  */
 package dao;
+import java.util.List;
+
 import model.BanDaDat;
+
 
 /**
  *
@@ -14,7 +17,12 @@ public class BanDaDatDAO extends DAO{
     public BanDaDatDAO() {
         super();
     }
+    private HangDatDAO hangDatDAO;
     public boolean themDatBan(BanDaDat db){
         return true;
+    }
+
+    public List<BanDaDat> getByKhachHang(String name, String sdt){
+        return hangDatDAO.getByKhachHang(name,sdt);
     }
 }

@@ -6,9 +6,13 @@
 package dao;
 
 import java.util.ArrayList;
+import java.util.List;
+
+import model.BanDaDat;
 import model.HangDat;
 import model.KhachHang;
 import model.MonAn;
+import model.MonDaDat;
 
 /**
  *
@@ -23,5 +27,21 @@ public class HangDatDAO {
     }
     public HangDat get(KhachHang user){
         return new HangDat();
+    }
+    public List<BanDaDat>getByKhachHang(String name,String sdt){
+        KhachHang kh = new KhachHang();
+        kh.setSdt(sdt);
+        kh.setTen(name);
+        List<BanDaDat> list = new ArrayList<BanDaDat>();
+        return list;
+    }
+
+    public void updateDanhSachMon(MonAn mon, int sl,KhachHang user){
+        HangDat hangDat = this.get(user);
+        List<MonDaDat>dsMon = hangDat.getListMonDaDats();
+        MonDaDat daDat = new MonDaDat();
+        daDat.setMonAn(mon);
+        daDat.setSoLuong(sl);
+        dsMon.add(daDat);
     }
 }
