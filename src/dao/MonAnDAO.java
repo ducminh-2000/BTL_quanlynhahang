@@ -37,4 +37,9 @@ public class MonAnDAO extends DAO{
     public ArrayList<MonAn> getAll(){
         return new ArrayList<MonAn>();
     }
+
+    public ArrayList<MonAn> search(String key){
+        ArrayList<MonAn> result = new ArrayList<MonAn>();
+        return result;
+    }
 }

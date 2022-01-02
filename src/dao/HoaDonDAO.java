@@ -5,6 +5,7 @@
  */
 package dao;
 
+import model.HangDat;
 import model.HoaDon;
 
 /**
@@ -15,7 +16,11 @@ public class HoaDonDAO {
     public HoaDonDAO(){
         
     }
-    public HoaDon create(HoaDon hd){
-        return hd;
+    public HoaDon create(HangDat hd){
+        return new HoaDon();
+    }
+
+    public void save(HoaDon hd){
+        
     }
 }

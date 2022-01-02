@@ -10,6 +10,7 @@ import java.util.List;
 
 import model.BanDaDat;
 import model.HangDat;
+import model.HoaDon;
 import model.KhachHang;
 import model.MonAn;
 import model.MonDaDat;
@@ -22,6 +23,10 @@ public class HangDatDAO {
     public HangDatDAO(){
         
     }
+
+
+    private HoaDonDAO hoaDon;
+
     public HangDat create(ArrayList<MonAn> list){
         return new HangDat();
     }
@@ -43,5 +48,9 @@ public class HangDatDAO {
         daDat.setMonAn(mon);
         daDat.setSoLuong(sl);
         dsMon.add(daDat);
+    }
+
+    public HoaDon xuatHoaDon(HangDat hd){
+        return hoaDon.create(hd);
     }
 }
